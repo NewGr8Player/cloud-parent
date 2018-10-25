@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: git://git.coding.net/yuanxin/blog-code.git
-          search-paths: cloud-parent/config-repo,cloud-parent/config-repo/{application}
+          uri: https://github.com/NewGr8Player/cloud-parent/
+          search-paths: config-repo/,config-repo/{application}
           username:
           password:

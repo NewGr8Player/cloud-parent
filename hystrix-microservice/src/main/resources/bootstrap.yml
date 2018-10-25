@@ -3,5 +3,4 @@ spring:
     name: hystrixmicroservice
   cloud:
     config:
-      #配置中心地址
       uri: http://localhost:8888
