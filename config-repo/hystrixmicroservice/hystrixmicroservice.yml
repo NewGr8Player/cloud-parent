@@ -1,0 +1,18 @@
+server:
+  port: 9468
+#必须手动指定Feign开启Hystrix容错
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    #可对代理的微服务的每一个方法都进行特殊配置
+    "HelloService#whoa()":
+       execution:
+         isolation:
+           thread:
+           timeoutInMilliseconds: 500
+  threadpool:
+    #目前Feign是对每个微服务采用的一个线程池的模式
+    microserviceb:
+      coreSize: 200

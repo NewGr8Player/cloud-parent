@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>me.laoyuan</groupId>
+	<artifactId>cloud-parent</artifactId>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+	<parent>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-dependencies</artifactId>
+		<version>Edgware.SR1</version>
+	</parent>
+	<modules>
+		<module>eureka-center-server</module>
+		<module>config-server</module>
+		<module>gateway-server</module>
+		<module>micro-service-a-server</module>
+		<module>micro-service-b-server</module>
+		<module>hystrix-microservice</module>
+		<module>hystrix-dashboard</module>
+		<module>hystrix-turbine</module>
+		<module>hystrix-command-service</module>
+	</modules>
+</project>

@@ -1,0 +1,17 @@
+server:
+  port: 8080
+zuul:
+  #使用'*'可以忽略注册中心所有微服务，只以配置的微服务为准
+  ignored-services: '*'
+  routes:
+    service-a-route:
+      service-id: microservicea
+      # 微服务ID代理的拦截路径
+      path: /api/a/** 
+      #当strip-prefix=true时，代理拦截的路径会忽略掉，不会转发到服务，默认为true
+      strip-prefix: true
+    service-b-route:
+      service-id: microserviceb
+      # 微服务ID代理的拦截路径
+      path: /api/b/** 
+    

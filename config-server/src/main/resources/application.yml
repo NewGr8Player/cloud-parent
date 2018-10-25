@@ -1,0 +1,13 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git://git.coding.net/yuanxin/blog-code.git
+          search-paths: cloud-parent/config-repo,cloud-parent/config-repo/{application}
+          username:
+          password:

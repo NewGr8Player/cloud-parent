@@ -1,0 +1,9 @@
+server:
+  port: 6601
+eureka:
+  instance:
+    hostname: regcentera
+  client:
+    serviceUrl:
+      #设置与其他注册中心节点交互的地址，查询和注册服务都需要依赖这个地址，多个地址逗号分隔
+      defaultZone: http://regcenterb:6602/eureka/

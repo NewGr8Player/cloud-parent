@@ -1,0 +1,6 @@
+server:
+  port: 9990
+#填写需要聚合容错数据的微服务名称，逗号分隔
+turbine:
+  app-config:  hystrixmicroservice,hystrixcommandservice
+  cluster-name-expression: "'default'"

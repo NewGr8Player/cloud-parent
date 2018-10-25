@@ -1,0 +1,6 @@
+# Idea config
+.idea
+*/*.iml
+
+# Output folder
+*/target

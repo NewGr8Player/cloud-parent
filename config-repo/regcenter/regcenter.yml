@@ -1,0 +1,18 @@
+server:
+  port: 6666
+eureka:
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 10000
+#   registry-sync-retry-wait-ms: 500
+#   a-sgcache-expiry-timeout-ms: 30000
+#   peer-eureka-nodes-update-interval-ms: 15000
+#   renewal-threshold-update-interval-ms: 300000
+  client:
+    #表示是否将自己注册到Eureka Server，默认为true。由于当前自身为Eureka Server，所以置为false
+    registerWithEureka: false
+    #一般注册中心会做高可用处理，所以需要从其他注册中心节点获取注册信息，默认为true
+    fetchRegistry: true
+    serviceUrl:
+      #设置与其他注册中心节点交互的地址，查询和注册服务都需要依赖这个地址，多个地址逗号分隔
+      defaultZone: http://localhost:6666/eureka/
