@@ -9,7 +9,7 @@ eureka:
       enabled: true
     registry-fetch-interval-seconds: 5
     serviceUrl:
-      defaultZone: http://regcentera:6601/eureka/,http://regcenterb:6602/eureka/
+      defaultZone: http://${spring.cloud.client.ip-address}:6601/eureka/,http://${spring.cloud.client.ip-address}:6602/eureka/
 
 hystrix:
   threadpool:
