@@ -3,7 +3,6 @@ spring:
     name: hystrixcommandservice
   cloud:
     config:
-      #配置中心地址
       uri: http://localhost:8888
       #启动配置环境
       #profile: dev

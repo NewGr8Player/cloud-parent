@@ -16,7 +16,6 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 @SpringBootApplication
 public class HystrixCommandServiceServer {
 	public static void main(String[] args) {
-		new SpringApplicationBuilder(HystrixCommandServiceServer.class).web(true).run(args);
 		SpringApplication.run(HystrixCommandServiceServer.class, args);
 	}
 
